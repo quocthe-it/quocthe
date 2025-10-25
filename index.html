@@ -2,31 +2,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang học tập</title>   
+    <title>Trang Khóa Học</title>   
     <link rel="stylesheet" href="css/kh.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">
             <img src="img/logo.png" alt="Logo trang học tập">
-            <h2>Trang Học Tập</h2>
+            <h2>Trang Khóa Học</h2>
         </div>
 
         <nav>
             <a href="#">Trang chủ</a>
-            <a href="#">Khóa học</a>
-            <a href="#">Liên hệ</a>
+            <a href="#khoahoc">Khóa học</a>
+            <a href="#lienhe">Liên hệ</a>
         </nav>
     </header>
 
     <section class="banner">
         <h1>Chào mừng đến với Website học tập</h1>
         <p>Cùng nhau học và phát triển mỗi ngày!</p>
-        <a href="https://unica.vn/" target="_blank">
+        <a href="https://id.unica.vn/register?src=http://unica.vn" target="_blank">
             <button>ĐĂNG KÝ NGAY</button>
         </a>
     </section>
-
+		
     <main>
         <h1>Lợi ích khóa học</h1>
         <div class="box">
@@ -37,9 +42,51 @@
         </div>
     </main>
 
-    <footer>
-        <p>Email liên hệ: <a href="mailto:Quocthe281006@gmail.com">Quocthe281006@gmail.com</a></p>
-    </footer>
+    <section id="khoahoc" class="course-section">
+        <h1>Khóa học nổi bật</h1>
+        <div class="course-list">
 
+            <div class="course-card">
+                <h2>Lập trình Web tốc độ cao, thời gian thực với NodeJS</h2>
+                <a href="https://unica.vn/lap-trinh-web-voi-nodejs" target="_blank">
+                    <img src="img/anh1.jpg" alt="Khóa học Web cơ bản">
+                </a>
+                <p class="course-price">Chỉ từ <span>299.000đ</span></p>
+                <div class="course-actions">
+                    <a href="https://unica.vn/lap-trinh-web-voi-nodejs" target="_blank" class="detail-btn">Xem chi tiết</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <h2>Xây dựng Website Responsive với HTML5, CSS3</h2>
+                <a href="https://unica.vn/xay-dung-website-responsive-voi-html5-css3" target="_blank">
+                    <img src="img/anh2.jpg" alt="Khóa học Python cho người mới">
+                </a>
+                <p class="course-price">Chỉ từ <span>299.000đ</span></p>
+                <div class="course-actions">
+                    <a href="https://unica.vn/xay-dung-website-responsive-voi-html5-css3" target="_blank" class="detail-btn">Xem chi tiết</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <h2>Học lập trình JAVASCRIPT cho người mới bắt đầu</h2>
+                <a href="https://unica.vn/hoc-lap-trinh-javascript" target="_blank">
+                    <img src="img/anh3.jpg" alt="Khóa học thiết kế giao diện website">
+                </a>
+                <p class="course-price">Chỉ từ <span>599.000đ</span></p>
+                <div class="course-actions">
+                    <a href="https://unica.vn/hoc-lap-trinh-javascript" target="_blank" class="detail-btn">Xem chi tiết</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="lienhe">
+        <h2>Liên hệ</h2>
+        <p>Email liên hệ: <a href="mailto:Quocthe281006@gmail.com">Quocthe281006@gmail.com</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/the.quoc.3597" target="_blank">Quốc Thể</a></p>
+    </footer>
+    
 </body>
 </html>
